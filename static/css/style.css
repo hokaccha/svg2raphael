@@ -1,0 +1,66 @@
+body {
+    padding: 0px 20px;
+    width: 920px;
+}
+h2 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+.mod-box:after {
+    content: '.';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+.left {
+    float: left;
+    width: 400px;
+    height: 420px;
+    margin-right: 50px;
+}
+.right {
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+textarea {
+    font-size: 16px;
+}
+textarea,
+.canvas {
+    border: 1px solid #CCC;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    background: #FFF;
+    overflow: auto;
+}
+#to_raphael {
+    margin: 15px 0;
+    clear: both;
+    text-align: center;
+}
+#to_raphael button {
+    padding: 20px 250px;
+    font-size: 22px;
+}
+
+.mod-box {
+    padding: 10px 20px;
+}
+/*
+#svg {
+    background: #cedeff;
+}
+#raphael {
+    background: #ffd9ad;
+}
+*/
+#svg h2 {
+    color: #468ccb;
+}
+#raphael h2 {
+    color: #ef953a;
+}

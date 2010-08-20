@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <title>SVG2Raphael</title>
+</head>
+<body>
+
+<h1><object data="./logo_svg2raphael.svg" type="image/svg+xml" width="600" height="115"></object></h1>
+
+<div id="svg" class="mod-box">
+    <h2>SVG</h2>
+    <div class="left"><textarea></textarea></div>
+    <div class="right"><iframe src="svg.xhtml" id="svg_canvas"></iframe></div>
+</div>
+
+<p id="to_raphael"><button>to raphael</button></p>
+
+<div id="raphael" class="mod-box">
+    <h2>Raphael</h2>
+    <div class="left"><textarea></textarea></div>
+    <div class="right" id="raphael_canvas"></div>
+</div>
+
+<script src="js/jquery.1.4.js"></script>
+<script src="js/raphael.js"></script>
+<script>
+(function() {
+
+var eval_js = function(code) {
+    try {
+        $('#raphael_canvas').empty();
+        eval(code);
+    } catch (e) {
+        console.error(e);
+    }
+};
+
+$('#svg textarea').bind('keyup change', function() {
+    var svg = $(this.value);
+    //if (!svg.is('svg')) {
+    //    svg = $('<svg xmlns="http://www.w3.org/2000/svg">').html(svg);
+    //}
+    //$('#svg_canvas').contents().find('body').html(svg);
+    $('#svg_canvas').contents().find('body').html(this.value);
+});
+
+$('#raphael textarea').bind('keyup change', function() {
+    eval_js(this.value);
+});
+
+$('#to_raphael').click(function() {
+    $.post('convert.php', { svg: $('#svg textarea').val() }, function(data) {
+        $('#raphael textarea').val(data);
+        eval_js(data);
+    });
+});
+
+})();
+</script>
+</body>
+</html>

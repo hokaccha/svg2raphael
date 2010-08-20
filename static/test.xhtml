@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" dir="ltr">
+<head>
+<title>svg</title>
+</head>
+<body>
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="200" cy="80" r="100" fill="red"
+            fill-opacity="0.7"
+            stroke="black" stroke-width="3" 
+            transform="translate(0,50)">
+        <animate attributeName="r" attributeType="XML"
+                 begin="0s" dur="1s" repeatCount="indefinite"
+                 from="0" to="100" />
+    </circle>
+    <circle cx="200" cy="80" r="100" fill="blue"
+            fill-opacity="0.7"
+            stroke="black" stroke-width="3" 
+            transform="translate(70,150)">
+        <animate attributeName="r" attributeType="XML"
+                 begin="0s" dur="1s" repeatCount="indefinite"
+                 from="0" to="100" />
+    </circle>
+    <circle cx="200" cy="80" r="100" fill="green"
+            fill-opacity="0.7"
+            stroke="black" stroke-width="3" 
+            transform="translate(-70,150)">
+        <animate attributeName="r" attributeType="XML"
+                 begin="0s" dur="1s" repeatCount="indefinite"
+                 from="0" to="100" />
+    </circle>
+</svg>
+</body>
+</html>

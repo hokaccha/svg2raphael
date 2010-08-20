@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all" />
+    <title>SVG2Raphael</title>
+</head>
+<body>
+
+<h1><object data="static/logo_svg2raphael.svg" type="image/svg+xml" width="600" height="115"></object></h1>
+
+<div id="svg" class="mod-box">
+    <h2>SVG</h2>
+    <div class="left"><textarea>&lt;svg width="300" height="300" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;circle cx="100" cy="100" r="100" fill="red" /&gt;
+&lt;/svg&gt;</textarea></div>
+    <div class="right canvas" id="svg_canvas"></div>
+</div>
+
+<p id="to_raphael"><button>to raphael</button></p>
+
+<div id="raphael" class="mod-box">
+    <h2>Raphael</h2>
+    <div class="left"><textarea></textarea></div>
+    <div class="right canvas" id="raphael_canvas"></div>
+</div>
+
+<script src="static/js/jquery.1.4.js"></script>
+<script src="static/js/raphael.js"></script>
+<script src="static/js/main.js"></script>
+</body>
+</html>
