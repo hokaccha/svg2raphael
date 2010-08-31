@@ -1,6 +1,14 @@
 body {
+    margin: 0;
+    padding: 0;
+}
+div.wrapper {
     padding: 0px 20px;
     width: 920px;
+    margin: 0 auto;
+}
+h1 {
+    margin-bottom: 0;
 }
 h2 {
     font-size: 50px;
@@ -62,4 +70,11 @@ textarea,
 }
 #raphael h2 {
     color: #ef953a;
+}
+footer {
+    background: #EEE;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
 }
