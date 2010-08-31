@@ -42,22 +42,21 @@ textarea,
     clear: both;
     text-align: center;
 }
-#to_raphael button {
-    padding: 20px 250px;
-    font-size: 22px;
+#to_raphael img {
+    position: relative;
+    cursor: pointer;
+}
+#to_raphael img:hover {
+    opacity: 0.6;
+}
+#to_raphael img:active {
+    top: 2px;
+    left: 2px;
 }
 
 .mod-box {
     padding: 10px 20px;
 }
-/*
-#svg {
-    background: #cedeff;
-}
-#raphael {
-    background: #ffd9ad;
-}
-*/
 #svg h2 {
     color: #468ccb;
 }

@@ -18,7 +18,7 @@ $('#raphael textarea').bind('keyup change', function() {
     eval_js(this.value);
 });
 
-$('#to_raphael').click(function() {
+$('#to_raphael img').click(function() {
     $.post('/convert', { svg: $('#svg textarea').val() }, function(data) {
         $('#raphael textarea').val(data);
         eval_js(data);
