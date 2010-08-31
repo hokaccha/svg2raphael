@@ -2,13 +2,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="Content-Type" content="{{ content_type }}; charset=utf-8" /> 
     <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all" />
     <title>SVG2Raphael</title>
 </head>
 <body>
 
-<h1><object data="static/logo_svg2raphael.svg" type="image/svg+xml" width="600" height="115"></object></h1>
+<h1 id="logo"><object data="static/logo_svg2raphael.svg" type="image/svg+xml" width="600" height="115"></object></h1>
 
 <div id="svg" class="mod-box">
     <h2>SVG</h2>
@@ -18,7 +18,7 @@
     <div class="right canvas" id="svg_canvas"></div>
 </div>
 
-<p id="to_raphael"><button>to raphael</button></p>
+<p id="to_raphael"><button>Convert Raphael</button></p>
 
 <div id="raphael" class="mod-box">
     <h2>Raphael</h2>
