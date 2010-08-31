@@ -102,7 +102,7 @@ class Row:
 
     def to_string(self):
         if not self.method:
-            raise ParseError, 'method is not set'
+            raise 'ParseError: method is not set'
 
         param = "'%s'" % self.d if self.method == 'path' else ''
         ret = "paper.%s(%s)" % (self.method, param)
